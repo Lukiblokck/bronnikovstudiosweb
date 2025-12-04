@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Open Graph (Discord, WhatsApp, Facebook, etc.) -->
+  <meta property="og:title" content="Bronnikov Studios">
+  <meta property="og:description" content="Bronnikov Studios - Indie Game Development Studio">
+  <meta property="og:image" content="https://bronnikov.gamejolt.io/profile.png">
+  <meta property="og:url" content="https://bronnikov.gamejolt.io/index.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Bronnikov Studios">
+  
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Bronnikov Studios">
+  <meta name="twitter:description" content="Bronnikov Studios - Indie Game Development Studio">
+  <meta name="twitter:image" content="https://bronnikov.gamejolt.io/profile.png">
+  
+  <!-- Meta description tradicional -->
+  <meta name="description" content="Bronnikov Studios - Indie Game Development Studio">
+  
+  <!-- Color del tema -->
+  <meta name="theme-color" content="#00b4d8">
+
+  <title>Bronnikov Studios</title>
+  <link rel="icon" type="image/png" href="profile.png" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #001f33, #003d40, #00b4d8);
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      overflow-x: hidden;
+    }
+
+    header {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      background: rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(10px);
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      letter-spacing: 2px;
+      background-image: linear-gradient(90deg, #00ffff, #00b4d8, #00ff99);
+      background-clip: text;
+      color: transparent;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 25px;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #00ffff;
+    }
+
+    main {
+      margin-top: 160px;
+      text-align: center;
+      max-width: 800px;
+      padding: 20px;
+      animation: fadeIn 1.5s ease;
+    }
+
+    main img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      border: 3px solid #00ffff;
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+    }
+
+    main h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      opacity: 0.9;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 30px;
+      background: linear-gradient(90deg, #00ffff, #00b4d8);
+      border: none;
+      border-radius: 30px;
+      color: #001f33;
+      font-weight: bold;
+      cursor: pointer;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    .button:hover {
+      transform: scale(1.05);
+      background: linear-gradient(90deg, #00ff99, #00b4d8);
+    }
+
+    footer {
+      margin-top: 60px;
+      text-align: center;
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Bronnikov Studios</h1>
+    <nav>
+      <a href="team.html">Team</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <img src="profile.png" alt="Profile Image" />
+    <h2>Welcome to Bronnikov Studios</h2>
+    <p>We create indie games that combine style, story, and immersive gameplay. Every project is built with passion and designed to bring unique experiences to players worldwide.</p>
+    <button class="button" onclick="explore()">Explore</button>
+  </main>
+
+  <footer>
+    <p>© 2025 Bronnikov Studios. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function explore() {
+      window.location.href = 'projects.html';
+    }
+  </script>
+</body>
+</html>

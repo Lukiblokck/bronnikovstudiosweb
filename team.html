@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Open Graph (Discord, WhatsApp, Facebook, etc.) -->
+  <meta property="og:title" content="Bronnikov Studios — Team">
+  <meta property="og:description" content="Meet the amazing team behind Bronnikov Studios!">
+  <meta property="og:image" content="https://bronnikov.gamejolt.io/profile.png">
+  <meta property="og:url" content="https://bronnikov.gamejolt.io/team.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Bronnikov Studios">
+  
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Bronnikov Studios — Team">
+  <meta name="twitter:description" content="Here you can see our amazing team members!">
+  <meta name="twitter:image" content="https://bronnikov.gamejolt.io/profile.png">
+  
+  <!-- Meta description tradicional -->
+  <meta name="description" content="Here you can see our amazing team members!">
+  
+  <!-- Color del tema -->
+  <meta name="theme-color" content="#00b4d8">
+
+  <title>Bronnikov Studios — Team</title>
+  <link rel="icon" type="image/png" href="profile.png" />
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; font-family:'Orbitron', sans-serif; }
+    body { background: linear-gradient(135deg, #001f33, #003d40, #00b4d8); color:white; min-height:100vh; }
+    header { width:100%; display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; padding:20px 50px; background: rgba(0,0,0,0.2); backdrop-filter: blur(10px); position: fixed; top:0; left:0; z-index:1000; }
+    header h1 { font-size:2rem; letter-spacing:2px; background-image: linear-gradient(90deg,#00ffff,#00b4d8,#00ff99); background-clip:text; color:transparent; margin:0; }
+    nav { display:flex; flex-wrap:wrap; gap:15px; margin-top:10px; }
+    nav a { color:white; text-decoration:none; font-weight:bold; transition:color 0.3s ease; }
+    nav a:hover { color:#00ffff; }
+    main { max-width:800px; margin:160px auto 40px auto; padding:20px; display:grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap:24px; }
+    .member { background: rgba(255,255,255,0.05); border-radius:16px; padding:20px; text-align:center; transition: transform 0.3s ease, background 0.3s ease; }
+    .member:hover { transform:translateY(-8px); background: rgba(0,191,166,0.2); }
+    .member img { width:120px; height:120px; border-radius:50%; object-fit:cover; margin-bottom:12px; border:2px solid #00b4d8; }
+    .member h3 { margin:8px 0; color:#00ff99; }
+    .member p { font-size:0.95rem; color:#ccefff; }
+    footer { text-align:center; padding:20px; font-size:0.9rem; opacity:0.8; }
+    @media(max-width:600px){ header h1{font-size:1.4rem;width:100%; text-align:center;} nav{justify-content:center; width:100%;} }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Our Team</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="member">
+      <img src="https://lukiblokck.github.io/profile.png" alt="Lukiblokck">
+      <h3>Lukiblokck</h3>
+      <p>Founder & Lead Developer — Loves building indie games with a futuristic style.</p>
+    </div>
+
+    <div class="member">
+      <img src="https://via.placeholder.com/120" alt="SonicoDev">
+      <h3>SonicoDev</h3>
+      <p>3D Artist — She makes the 3D models for the games.</p>
+    </div>
+
+    <div class="member">
+      <img src="pato.png" alt="Patoo3000">
+      <h3>Patoo3000</h3>
+      <p>Sound & Music — Composes immersive soundtracks for our games.</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Bronnikov Studios. All rights reserved.</p>
+  </footer>
+</body>
+</html>
